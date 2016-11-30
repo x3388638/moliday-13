@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		div.border {
+			outline: 1px solid #000;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.selected {
+			background: rgba(255, 114, 114, 0.64);
+		}
+		.container {
+			font-size: 16px;
+			font-weight: 700;
+		}
+	</style>
+</head>
+<body>
+	<div class="container border text-center">
+		<div class="row border">
+			<div class="col-md-1 border">1</div>
+			<div class="col-md-1 border">1</div>
+			<div class="col-md-1 border">1</div>
+			<div class="col-md-1 border">1</div>
+			<div class="col-md-1 border">1</div>
+			<div class="col-md-1 border">1</div>
+			<div class="col-md-1 border">1</div>
+			<div class="col-md-1 border">1</div>
+			<div class="col-md-1 border">1</div>
+			<div class="col-md-1 border">1</div>
+			<div class="col-md-1 border">1</div>
+			<div class="col-md-1 border">1</div>
+		</div>
+		<div class="row border">
+			<div class="col-md-8 border">8</div>
+			<div class="col-md-4 border">4</div>
+		</div>
+		<div class="row border">
+			<div class="col-md-4 border">4</div>
+			<div class="col-md-4 border">4</div>
+			<div class="col-md-4 border">4</div>
+		</div>
+		<div class="row border">
+			<div class="col-md-6 border">6</div>
+			<div class="col-md-6 border">6</div>
+		</div>
+	</div>
+	<div class='container'>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<button class="btn btn-default" data-target="container">.container</button>
+				<button class="btn btn-default" data-target="row">.row</button>
+				<button class="btn btn-default" data-target="col">.col-*</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('button').on('click', function() {
+			$('div').removeClass('selected')
+			switch($(this).attr('data-target')) {
+				case 'container': 
+					$('.container.border').addClass('selected');
+					break;
+				case 'row': 
+					$('.row.border').addClass('selected');
+					break;
+				default: 
+					$('.row.border div.border').addClass('selected');
+					break;
+			}
+		});
+	</script>
+</body>
+</html>
