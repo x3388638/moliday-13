@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Newsweek</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		.navbar-brand>img {
+			display: inline;
+		}
+
+		#latest-news {
+			font-size: 15px;
+			font-weight: 700;
+		}
+
+		#latest-news li {
+			border-bottom: 1px solid #d2d2d2; 
+			padding: 10px 0
+		}
+
+		#latest-news li a {
+			color: #000;
+		}
+
+		section.col-md-12 {
+			border-bottom: 1px solid #d2d2d2;
+			margin-bottom: 20px;
+		}
+
+		footer {
+			background: #000; 
+			color: #fff;
+			padding-top: 100px;
+			padding-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img src="https://upload.wikimedia.org/wikipedia/zh/thumb/8/88/Embelm_of_National_Chi_Nan_University.svg/1024px-Embelm_of_National_Chi_Nan_University.svg.png" height="20px" width="20px" />
+						<span class="hidden-xs">NewsNCNU</span>
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">WORLD</a></li>
+						<li><a href="#">U.S.</a></li>
+						<li><a href="#">PRODUCTS</a></li>
+						<li><a href="#">OPINION</a></li>
+						<li><a><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">SUBSCRIPT</a></li>
+						<li><a href="#">SIGN IN</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div>
+					<img src="https://d.europe.newsweek.com/en/full/68326/greece-refugees.jpg?w=823&h=481&l=50&t=50" width="100%" />
+					<p class="text-center">Greece's central bank governor said escalation of refugee crisis would be a blow to troubled...</p>
+				</div>
+				<section class="col-md-6">
+					<div class="thumbnail">
+						<img width="100%" src="https://d.europe.newsweek.com/en/full/68320/hillary-clinton.jpg?w=381&h=255&l=50&t=50" alt="...">
+						<div class="caption">
+							<h3>Dispatches From the Alternate Universe Where Hillary Clinton Won</h3>
+							<p>There's a massive graveyard of content celebrating Hillary Clinton's historic win. Here are some...</p>
+						</div>
+					</div>
+				</section>
+				<section class="col-md-6">
+					<div class="thumbnail">
+						<img width="100%" src="https://d.europe.newsweek.com/en/full/68316/11-29-dapl-01.jpg?w=381&h=255&l=50&t=50" alt="...">
+						<div class="caption">
+							<h3>Dakota Access Pipeline Protesters Ordered Expelled by North Dakota Governor</h3>
+							<p>The Army Corps has insisted it has no plans to forcibly remove the anti-pipeline activists, many of...</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<asdie class="col-md-4">
+				<h2>LATEST NEWS</h2>
+				<ul id="latest-news">
+					<li><a>Putin’s Backing of Assad May Backfire on Him</a></li>
+					<li><a>Putin’s Backing of Assad May Backfire on Him</a></li>
+					<li><a>Putin’s Backing of Assad May Backfire on Him</a></li>
+					<li><a>Putin’s Backing of Assad May Backfire on Him</a></li>
+					<li><a>Putin’s Backing of Assad May Backfire on Him</a></li>
+					<li><a>Putin’s Backing of Assad May Backfire on Him</a></li>
+					<li><a>Putin’s Backing of Assad May Backfire on Him</a></li>
+				</ul>
+			</asdie>
+		</div>
+	</div>
+	<div class='container'>
+		<div class="row">
+			<section class="col-md-12">
+				<h2 class="text-center">Headlines</h2>
+				<div>
+					<article class="col-md-4 col-sm-6">
+						<div class="thumbnail">
+							<img width="100%" src="https://d.europe.newsweek.com/en/full/68318/hacker-hacked-san-francisco-transport.jpg?w=387&h=259&l=50&t=50" alt="...">
+							<div class="caption">
+								<h3>San Francisco Transport Network Hacker Gets Hacked</h3>
+								<p>Hacker hacks hacker who hacked the San Francisco Municipal Railway system.</p>
+							</div>
+						</div>
+					</article>
+					<article class="col-md-4 col-sm-6">
+						<div class="thumbnail">
+							<img width="100%" src="https://d.europe.newsweek.com/en/full/68322/sweden-defender-victor-lindelof-solna-stockholm-sweden.jpg?w=387&h=259&l=50&t=50" alt="...">
+							<div class="caption">
+								<h3>Manchester United: Who is Jose Mourinho Transfer Target Victor Lindelof?</h3>
+								<p>The defender already has 11 caps for Sweden.</p>
+							</div>
+						</div>
+					</article>
+					<article class="col-md-4 col-sm-6">
+						<div class="thumbnail">
+							<img width="100%" src="https://d.europe.newsweek.com/en/full/61946/aacsb-gif-banner.gif?w=387&amp;h=259&amp;l=50&amp;t=40" alt="...">
+							<div class="caption">
+								<h3>When you look for the Best in Business Education, look for AACSB Accreditation</h3>
+								<p>Today’s business landscape is more global, dynamic, and unpredictable than ever before....</p>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="col-md-12">
+				<div class="col-md-3">
+					<div class="thumbnail">
+						<div class="caption">
+							<h3>When you look for the Best in Business Education, look for AACSB Accreditation</h3>
+							<p>Today’s business landscape is more global, dynamic, and unpredictable than ever before....</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="thumbnail">
+						<div class="caption">
+							<h3>When you look for the Best in Business Education, look for AACSB Accreditation</h3>
+							<p>Today’s business landscape is more global, dynamic, and unpredictable than ever before....</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="thumbnail">
+						<div class="caption">
+							<h3>When you look for the Best in Business Education, look for AACSB Accreditation</h3>
+							<p>Today’s business landscape is more global, dynamic, and unpredictable than ever before....</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="thumbnail">
+						<div class="caption">
+							<h3>When you look for the Best in Business Education, look for AACSB Accreditation</h3>
+							<p>Today’s business landscape is more global, dynamic, and unpredictable than ever before....</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="col-md-12">
+				<h2 class="text-center">Voices</h2>
+				<div>
+					<article class="col-md-3 col-sm-6">
+						<div class="thumbnail">
+							<img width="100%" src="https://d.europe.newsweek.com/en/full/68268/rtss695.jpg?w=282&h=189&l=50&t=50" alt="...">
+							<div class="caption">
+								<h3>If Clinton Belongs in Prison, So Does Giuliani</h3>
+								<p>There is strong evidence Giuliani committed multiple felonies.</p>
+							</div>
+						</div>
+					</article>
+					<article class="col-md-3 col-sm-6">
+						<div class="thumbnail">
+							<img width="100%" src="https://d.europe.newsweek.com/en/full/68260/11-28-reich-trump-01.jpg?w=282&h=189&l=50&t=50" alt="...">
+							<div class="caption">
+								<h3>Robert Reich: The Seven Ways Trump Is Destroying the Free Press</h3>
+								<p>Democracy depends on a free press, which is why tyrants try to squelch it.</p>
+							</div>
+						</div>
+					</article>
+					<article class="col-md-3 col-sm-6">
+						<div class="thumbnail">
+							<img width="100%" src="https://d.europe.newsweek.com/en/full/68262/trump-conway-2016.jpg?w=282&h=189&l=50&t=50" alt="...">
+							<div class="caption">
+								<h3>How Politicians Have Adapted for a Post-Truth Reality</h3>
+								<p>Voters are now followers and politicians are ahead of pollsters in understanding the new world.</p>
+							</div>
+						</div>
+					</article>
+					<article class="col-md-3 col-sm-6">
+						<div class="thumbnail">
+							<img width="100%" src="https://d.europe.newsweek.com/en/full/68172/cybersecurity-john-mcafee-defense.jpg?w=282&h=189&l=50&t=50" alt="...">
+							<div class="caption">
+								<h3>Why Is Cyber Defence Decades Behind Weaponized Software?</h3>
+								<p>Cybersecurity pioneer John McAfee says only a fool would think there is effective cyber defence.</p>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					&copy; 2016
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
